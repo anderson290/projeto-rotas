@@ -1,0 +1,11 @@
+.cursosL{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: background 0.8s;
+  }
+  .cursosL:hover{
+    background-color: lightslategray;
+    color: white;
+
+  }
