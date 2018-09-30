@@ -1,3 +1,5 @@
+import { AuthGuard } from './guard/auth-guard';
+import { AuthService } from './login/auth.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { Router, RouterModule } from '@angular/router';
@@ -41,6 +43,10 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
     RouterModule
   ],
  // providers: [CursosService],
+  providers: [
+    AuthService,
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
