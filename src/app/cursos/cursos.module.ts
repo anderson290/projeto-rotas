@@ -1,3 +1,4 @@
+import { CursosRoutingModule } from './cursos.routing.module';
 
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -15,7 +16,8 @@ import { CommonModule } from '@angular/common';
     imports:[
         //diretivas e validações com commonmodule | no modulo raiz é o browsermodule
         CommonModule,
-        RouterModule
+        CursosRoutingModule
+        //RouterModule
     ],
     exports:[],
     declarations:[
