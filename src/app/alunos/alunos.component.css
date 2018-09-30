@@ -1,0 +1,10 @@
+.alunosL{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(18, 156, 103);
+    transition: background 0.8s;
+  }
+  .alunosL:hover{
+    background-color: lightgray;    
+
+  }

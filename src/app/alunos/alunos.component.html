@@ -1,5 +1,16 @@
-<p>
-  alunos works!
-</p>
-<!--chamando rotas filhas permitindo a manipulação de pais e filhos na mesma pagina-->
-<router-outlet></router-outlet>
+<div class="mt-4">
+  <div class="row">
+    <div class="col-6">
+      <p>
+        Lista de Alunos
+      </p>
+      <ul class="list-group">
+        <li class="list-group-item alunosL" *ngFor="let aluno of alunos" [routerLink]="[aluno.id]">
+          {{aluno.nome}}</li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <!--chamando rotas filhas permitindo a manipulação de pais e filhos na mesma pagina-->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
