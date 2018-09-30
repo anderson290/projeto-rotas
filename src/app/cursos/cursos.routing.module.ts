@@ -8,9 +8,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const cursosRoutes: Routes = [
-{path: 'cursos', component: CursosComponent},
-  {path: 'curso/:id', component: CursoDetalheComponent},
+  //esta vazio por conta do lazy loading
+  //caminho hardcoded sempre na frente do id (dinamico)
+  {path: '', component: CursosComponent},
   {path: 'naoEncontrado', component: CursoNaoEncontradoComponent},
+  {path: ':id', component: CursoDetalheComponent}
+
 
 ];
 

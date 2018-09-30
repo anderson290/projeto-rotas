@@ -7,6 +7,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 const appRoutes: Routes = [
+  //priorizando carregamentos (caminho modulo#nomemodulo)
+  //lazy loading | colocar o caminho#modulo - remova qualquer 
+  //import do modulo na aplicação - no arquivo de roteamento do modulo
+  //o caminho principal deve ficar vazio
+  {path: 'cursos', loadChildren: 'app/cursos/cursos.module#CursosModule'},
+  {path: 'alunos', loadChildren: 'app/alunos/alunos.module#AlunosModule'},
   //{path: 'cursos', component: CursosComponent},
   //{path: 'curso/:id', component: CursoDetalheComponent},
   {path: 'login', component: LoginComponent},

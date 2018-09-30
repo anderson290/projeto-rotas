@@ -7,8 +7,8 @@ import { AlunoFormComponent } from './aluno-form/aluno-form.component';
 //variavel para armazenar rotas
 const alunosRouts = [
     //definindo rotas filhas de alunos
-    //componente pai
-    {path: 'alunos', component: AlunosComponent, children:[
+    //componente pai vazio (lazy loading)
+    {path: '', component: AlunosComponent, children:[
         //componentes filhos
         {path: 'novo', component: AlunoFormComponent},
         {path: ':id', component: AlunoDetalheComponent},

@@ -5,7 +5,7 @@
 <p>Pagina: {{pagina}}</p>
 <ul class="list-group">
     <li class="list-group-item cursosL" *ngFor="let curso of cursos" 
-    [routerLink]="['/curso', curso.id]">{{curso.nome}}</li>
+    [routerLink]="['/cursos', curso.id]">{{curso.nome}}</li>
   </ul>
 
   <button class="btn btn-secondary mt-3" (click)="proximaPagina()">Próxima Página</button>

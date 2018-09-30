@@ -32,7 +32,7 @@ export class CursoDetalheComponent implements OnInit {
         
         //redirecionando se o id nao estiver cadastrado
         if(this.curso == null){
-            this.router.navigate(['/naoEncontrado']);
+            this.router.navigate(['cursos/naoEncontrado']);
         }
       }
     );
