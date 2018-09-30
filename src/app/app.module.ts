@@ -1,3 +1,5 @@
+import { AlunosGuard } from './guard/alunos.guard';
+import { CursosGuard } from './guard/cursos.guard';
 import { AuthGuard } from './guard/auth-guard';
 import { AuthService } from './login/auth.service';
 
@@ -13,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 //import { AlunosComponent } from './alunos/alunos.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { AlunoDetalheResolver } from './alunos/aluno-detalhe.resolver';
+import { AlunosService } from './alunos/alunos.service';
 //import { CursosModule } from './cursos/cursos.module';
 //import { AlunosModule } from './alunos/alunos.module';
 
@@ -45,7 +49,11 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
  // providers: [CursosService],
   providers: [
     AuthService,
-    AuthGuard
+    AuthGuard,
+    CursosGuard,
+    AlunosGuard,
+    AlunoDetalheResolver,
+    AlunosService
   ],
   bootstrap: [AppComponent]
 })

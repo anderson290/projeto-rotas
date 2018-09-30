@@ -1,3 +1,5 @@
+import { AlunoDetalheResolver } from './aluno-detalhe.resolver';
+import { AlunosDeactivateGuard } from './../guard/aluno-deactivate.guard';
 import { AlunosRoutingModule } from './alunos.routing.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
@@ -19,7 +21,7 @@ import { FormsModule } from '@angular/forms';
         //todos tem acesso ao alunosService
         AlunosComponent, AlunoFormComponent, AlunoDetalheComponent
         ],
-    providers: [AlunosService],
+    providers: [AlunosService, AlunosDeactivateGuard, AlunoDetalheResolver],
 })
 
 export class AlunosModule{}

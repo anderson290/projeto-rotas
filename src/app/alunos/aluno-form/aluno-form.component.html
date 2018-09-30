@@ -1,11 +1,11 @@
     <div class="form-group">
         <label for="idT">Id:</label>
-        <input type="number" [(ngModel)]="aluno.id" class="form-control active" id="idT">
+        <input type="number" [(ngModel)]="aluno.id" class="form-control active"  id="idT">
     </div>
 
   <div class="form-group">
     <label for="name">Nome:</label>
-    <input type="text" [(ngModel)]="aluno.nome" class="form-control" id="name">
+    <input type="text" [(ngModel)]="aluno.nome" class="form-control" (input)="onInput()" id="name">
   </div>
 
   <div class="form-group">
